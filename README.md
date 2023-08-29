@@ -350,7 +350,7 @@ interface Observable {
   constructor(SubscribeCallback callback);
   undefined subscribe(optional Observer observer = {}, optional SubscribeOptions = {});
 
-  undefined finally(VoidFunction callback);
+  Observable finally(VoidFunction callback);
 
   // Constructs a native Observable from `value` if it's any of the following:
   //   - Observable
